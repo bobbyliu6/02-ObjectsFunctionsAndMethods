@@ -179,7 +179,19 @@ def try_methods_and_functions():
     coash=rg.SimpleTurtle('turtle')
     coash.pen=rg.Pen('blue',5)
     coash.backward(150)
-    
+    coash.speed=1
+    draw_many_squares(coash,2,100,30)
+    coash.speed=5
+    coash.pen=rg.Pen('red',5)
+    draw_many_squares(coash,10,50,15)
+    coash.speed=100
+    coash.pen=rg.Pen('red',35)
+    draw_many_squares(coash,8,300,60)
+    coash.pen=rg.Pen('black',3)
+    coash.backward(200)
+    coash.draw_circle(30)
+    coash.draw_square(50)
+
 
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
@@ -213,7 +225,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # DONE: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
